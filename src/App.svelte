@@ -3,6 +3,7 @@
 	import Home from "./routes/Home.svelte";
 	import Rate from "./routes/Rate.svelte"
 	import Login from "./routes/Login.svelte"
+	import Staff from "./routes/Staff.svelte"
 
 	export let name;
 	export let url = "";
@@ -17,6 +18,9 @@
 		<Route path="/" component="{Home}" />
 		<Route path="login">
 			<Login/>
+		</Route>
+		<Route path="staff">
+			<Staff/>
 		</Route>
 	</Router>
 
