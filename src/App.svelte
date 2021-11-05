@@ -2,6 +2,7 @@
 	import { Router, Link, Route } from "svelte-routing";
 	import Home from "./routes/Home.svelte";
 	import Rate from "./routes/Rate.svelte"
+	import Login from "./routes/Login.svelte"
 
 	export let name;
 	export let url = "";
@@ -14,6 +15,9 @@
 			<Rate id = {params.id}/>
 		</Route>
 		<Route path="/" component="{Home}" />
+		<Route path="login">
+			<Login/>
+		</Route>
 	</Router>
 
 </main>
